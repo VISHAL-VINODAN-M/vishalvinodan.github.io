@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do List App - Vishal</title>
+    <link rel="stylesheet" href="vishal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="TTC0822065.png" alt="Profile Picture of VISHAL VINODAN M" class="profile-picture">
+                <h3>VISHAL VINODAN M</h3>
+            </div>
+            
+            <nav class="menu">
+                <h5>Today’s Tasks</h5>
+                <div>
+                    <!-- Category buttons -->
+                <button class="task-btn personal" data-category="personal">
+                    <span class="dot"></span> Personal
+                </button>
+                <button class="task-btn freelance" data-category="freelance">
+                    <span class="dot"></span> Freelance
+                </button>
+                <button class="task-btn work" data-category="work">
+                    <span class="dot"></span> Work
+                </button>
+                <button class="task-btn scheduled" data-category="scheduled">
+                    <span class="dot"></span> Scheduled Tasks
+                </button>
+                </div>
+                
+            </nav>
+            
+
+        
+        </aside>
+      
+        <!-- Main Todo App Section -->
+        <div class="todo-app">
+            <h2>Welcome to the To-Do List <img src="images/icon.png" alt="To-Do Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <input type="date" id="date-input">
+                <input type="time" id="time-input">
+                <button onclick="addTask()">Add</button>
+            </div>
+<ul id="list-container">
+                <!-- Task items will appear here -->
+                 <li class="checked"></li>
+            </ul>
+        </div>
+        <!-- Settings Button -->
+<button class="settings-btn" onclick="goToSettings()">⚙ Settings</button>
+<a href="settings.html">
+        </div>
+    </div>
+    <script src="vishal.js"></script>
+</body>
+</html>

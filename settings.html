@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - To-Do List</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div class="settings-container">
+        <h2>Settings</h2>
+        
+        <!-- Dark Mode Toggle -->
+        <div class="setting-item">
+            <label for="dark-mode-toggle">Enable Dark Mode</label>
+            <input type="checkbox" id="dark-mode-toggle">
+        </div>
+
+        <!-- Notifications Toggle -->
+        <div class="setting-item">
+            <label for="notifications-toggle">Enable Notifications</label>
+            <input type="checkbox" id="notifications-toggle">
+        </div>
+
+        <!-- Edit Profile Section -->
+        <div class="setting-item">
+            <label for="edit-profile">Edit Profile</label>
+            <button id="edit-profile" onclick="editProfile()">Edit Profile</button>
+        </div>
+
+        <!-- Save Button -->
+        <button class="save-btn" onclick="saveSettings()">Save Settings</button>
+        <!-- Vishal Button on settings.html -->
+<a href="vishal.html">
+    <button class="back-btn">Back to Vishal</button>
+</a>
+
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
